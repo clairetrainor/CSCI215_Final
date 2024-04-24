@@ -24,9 +24,18 @@ function App() {
       <h1>Todo List</h1>
       <input type="text" 
       value={input}
-      onChange={(e) => setInput(e.target.value)}/>
+      onChange={(e) => setInput(e.target.value)}></input>
 
-      <button onClick={() => addTodo(input)}>Add Something To Get Done!</button>
+      <button onClick={() => addTodo(input)}>Add</button>
+      <ul>
+        {list.map((todo) => (
+          <li key={todo.id}>
+            {todo.todo}
+            <button>&times;</button>
+          </li>
+        ))}
+
+      </ul>
     </div>
   );
 
