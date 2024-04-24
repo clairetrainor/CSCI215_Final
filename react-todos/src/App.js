@@ -23,7 +23,7 @@ function App() {
     <div>
       <h1>Todo List</h1>
       <input type="text" 
-      value={input} 
+      value={input}
       onChange={(e) => setInput(e.target.value)}/>
 
       <button onClick={() => addTodo(input)}>Add Something To Get Done!</button>
