@@ -65,7 +65,7 @@ function App() {
 
       <img id="clown" src={imageSrc} className="fix" alt="Clown"></img> {/* Use imageSrc state */}
       <img id="fruity" src={fruitImage} class="otherfix" alt="fruits and veggies"></img>
-      <footer>by Claire Trainor for CSCI 215</footer>
+      <footer><a href="https://github.com/clairetrainor/CSCI215_Final/tree/main/my-todos">Link to my GitHub</a> by Claire Trainor for CSCI 215</footer>
     </div>
     
 

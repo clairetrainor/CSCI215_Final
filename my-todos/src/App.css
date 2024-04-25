@@ -71,17 +71,18 @@ h1{
   font-size: 55px;
   font-family: "Rock Salt", cursive;
   text-align: center;
-  color: #9d8189;
-  text-shadow: 1px 2px 2px #c55d7b;
+  color: #edafb8;
+  text-shadow: 1px 2px 2px #985568;
 }
 
 h2{
   margin:5px;
-  font-size: 20px;
+  font-size: 30px;
   font-family: "Itim", cursive;
   text-align: center;
   color: #9d8189;
   text-shadow: 1px 1px 1px #d195a6;
+  margin-bottom: .5em;
 }
 
 
