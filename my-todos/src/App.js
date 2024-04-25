@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import './App.css';
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
   const [input, setInput] = useState("");
   //const is the way react declares constants, similar to var or let in regular JS
   const addTodo = (todo) => {
+    //use camelCase for each const created
     const newTodo = {
       id: Math.random(),
       todo: todo
@@ -33,7 +35,7 @@ function App() {
   return (
 
     <div>
-      <h1>Just &lpar;To&rpar;DO it!</h1>
+      <h1>Just &#40;To&#41;DO it!</h1>
       <h2>Add Something to do here!</h2>
       <input type="text" value={input} onChange={(e) => setInput(e.target.value)}></input>
       <button onClick={() => addTodo(input)}>Add</button>
