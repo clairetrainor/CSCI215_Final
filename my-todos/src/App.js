@@ -1,5 +1,8 @@
 import React, {useState} from 'react'
 import './App.css';
+import clownImage from './clown.png';
+import fruitImage from './fruitsandveg.png';
+import todoImage from './todo.gif';
 
 function App() {
 
@@ -35,8 +38,9 @@ function App() {
   return (
 
     <div>
-      <h1>Just &#40;To&#41;DO it!</h1>
-      <h2>Add Something to do here!</h2>
+      <img id="todo" src={todoImage} alt="todo gif"></img>
+      <h1>Just &#40;To&#41;Do it!</h1>
+      <h2>add something to get done!</h2>
       <input type="text" value={input} onChange={(e) => setInput(e.target.value)}></input>
       <button onClick={() => addTodo(input)}>Add</button>
       <ul>
@@ -44,12 +48,17 @@ function App() {
           //.map() will reference original parameter todo
           <li key={todo.id}>
             {todo.todo}
-            <button onClick={() => deleteTodo(todo.id)}>&times;</button>
+            <button onClick={() => deleteTodo(todo.id)}>&#10003;</button>
           </li>
         ))}
 
       </ul>
+
+      <img id="clown" src={clownImage} class="fix" alt="Clown"></img>
+      <img id="fruity" src={fruitImage} class="otherfix" alt="fruits and veggies"></img>
+      <footer>by Claire Trainor for CSCI 215</footer>
     </div>
+    
 
 
   );
