@@ -16,8 +16,10 @@ function App() {
   //const is the way react declares constants, similar to var or let in regular JS
   const addTodo = (todo) => {
     //use camelCase for each const created
+    //id isn't important, so I'm using math.random() to randomly assign it
     const newTodo = {
       id: Math.random(),
+      //reference itself for relational purposes
       todo: todo
     };
     //add todo to the list
@@ -47,7 +49,13 @@ function App() {
   return (
 
     <div>
-      <header></header>
+      <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="https://github.com/clairetrainor/CSCI215_Final/tree/main/my-todos">My Github link</a></li>
+            <li><a href="https://www.tomatotimers.com/">Need a Pomodoro Timer?</a></li>
+            <li><a href="https://www.google.com/search?si=AKbGX_r8NHaQk3JeqTf_-LCEsU6Tdd_3AaVDn3LnfNk7SGdcnnzdHmsNIkJ_jK2B6oJ5rrNYiLxcGQbgFRO8PIv6sp9UMsSKRQ==">Take a break and play a game!</a></li>
+        </ul>
+        </nav>
       <img id="todo" src={todoImage} alt="todo gif"></img>
       <h1>Just &#40;To&#41;Do it!</h1>
       <h2>Add something to get done!</h2>
@@ -61,12 +69,11 @@ function App() {
             <button onClick={() => deleteTodo(todo.id)}>&#10003;</button>
           </li>
         ))}
-
+      {/* use image srcs to attachs images to screen */}
       </ul>
-
       <img id="clown" src={imageSrc} className="fix" alt="Clown"></img> {/* Use imageSrc state */}
       <img id="fruity" src={fruitImage} class="otherfix" alt="fruits and veggies"></img>
-      <footer><a href="https://github.com/clairetrainor/CSCI215_Final/tree/main/my-todos">Link to my GitHub</a> by Claire Trainor for CSCI 215 Final Project</footer>
+      <footer><a href="https://github.com/clairetrainor">Link to my GitHub profile</a>  Claire Trainor <br></br> CSCI 215 Final Project</footer>
     </div>
     
 

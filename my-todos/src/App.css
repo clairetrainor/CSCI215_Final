@@ -37,6 +37,53 @@
   }
 }
 
+.navbar {
+  display: flex;
+  position: sticky;
+  height: 25px;
+  text-align: center;
+  justify-content: center; 
+  justify-content: space-between;
+  border: .20em solid #eab5be;
+  background-color: #f0cec9;
+  background-blend-mode: darken;
+  background-size: cover;
+  color: white;
+  padding: 10px;
+}
+
+.nav-list {
+  position: fixed;
+  top: 0;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  list-style: none;
+}
+
+.nav-list li {
+  margin-right: 15px;
+}
+
+.nav-list li:last-child {
+  margin-right: 0;
+}
+
+.nav-list li a {
+  font-family: "Itim", cursive;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-list li a:hover {
+  color: #9d8189;
+
+}
+
 
 div{
   margin: 0 auto;
@@ -143,6 +190,7 @@ input:hover {
 input:focus {
   background-color: #ffcad4;
   border: 2px solid white;
+  color: white;
 }
 
 ul{
@@ -164,8 +212,8 @@ ul{
   width: 250px;
   height: 250px;
   position: absolute;
-  left: 12px;;
-  top:0;
+  left: 12px;
+  top: 40px;
 }
 
 #fruity{
@@ -184,11 +232,24 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 1rem;
+  padding: .5em;
   background-color: #f0cec9;
   text-align: center;
-  font-size: 15px;
+  font-size: 18px;
   font-family: "Itim", cursive;
   color: #9d8189;
   text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+  color: #9d8189;
+
 }
