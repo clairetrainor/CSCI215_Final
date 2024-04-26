@@ -47,6 +47,7 @@ function App() {
   return (
 
     <div>
+      <header></header>
       <img id="todo" src={todoImage} alt="todo gif"></img>
       <h1>Just &#40;To&#41;Do it!</h1>
       <h2>Add something to get done!</h2>
@@ -65,7 +66,7 @@ function App() {
 
       <img id="clown" src={imageSrc} className="fix" alt="Clown"></img> {/* Use imageSrc state */}
       <img id="fruity" src={fruitImage} class="otherfix" alt="fruits and veggies"></img>
-      <footer><a href="https://github.com/clairetrainor/CSCI215_Final/tree/main/my-todos">Link to my GitHub</a> by Claire Trainor for CSCI 215</footer>
+      <footer><a href="https://github.com/clairetrainor/CSCI215_Final/tree/main/my-todos">Link to my GitHub</a> by Claire Trainor for CSCI 215 Final Project</footer>
     </div>
     
 
